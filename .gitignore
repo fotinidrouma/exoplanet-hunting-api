@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Virtual environment
+venv/
+env/
+.venv/
+exoplanet_venv
+
+# Data - not committed, see README for how to obtain it
+data/
+*.csv
+
+# Trained model - large binary, regenerate via train_model.py
+# (remove this line if you'd rather commit the model for immediate runnability)
+#models/*.joblib
+
+# EDA output
+data_analysis/
+
+# Environment variables / secrets
+.env
+
+# OS/editor cruft
+.DS_Store
+.vscode/
+.idea/

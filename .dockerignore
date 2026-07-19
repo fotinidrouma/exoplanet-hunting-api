@@ -1,0 +1,13 @@
+# Don't copy these into the image - keeps it small and avoids leaking
+# local dev artifacts (your venv, raw data, git history) into the container
+
+venv/
+__pycache__/
+*.pyc
+.git/
+.gitignore
+data/
+*.csv
+.env
+eda_output/
+README.md
