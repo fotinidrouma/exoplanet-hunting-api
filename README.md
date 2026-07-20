@@ -27,7 +27,7 @@ evaluation strategy, and even how much to trust the test set numbers.
 
 ---
 
-## What I found in EDA
+## What I found in Exoplanet Data Analysis
 
 - **Raw flux is not remotely normally distributed** — it's a noisy signal
   around a large per-star baseline, occasionally dipping. Per-row
@@ -39,7 +39,7 @@ evaluation strategy, and even how much to trust the test set numbers.
 - **No missing values** in the flux columns; a small number of rows show
   signs of instrument artifacts (flat/constant sections, extreme single-point
   outliers) rather than genuine astrophysical signal.
-- Full EDA script: [`./data_analysis/analyze_data.py`](./data_analysis/analyze_data.py)
+- Full EDA script: [`data_analysis/analyze_data.py`](./data_analysis/analyze_data.py)
 
 ---
 
@@ -186,6 +186,7 @@ docker build -t exoplanet-api .
 # Run it, mapping container port 8000 to your machine's port 8000
 docker run -p 8000:8000 exoplanet-api
 ```
+Open [127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ---
 
@@ -198,13 +199,21 @@ python -m pytest
 
 ---
 
+## Deployment (Render)
+
+```
+Open [https://exoplanet-hunting-api.onrender.com/docs](https://exoplanet-hunting-api.onrender.com/docs)
+```
+
+---
+
 ## Roadmap
 - [x] EDA
 - [x] Feature engineering (time-domain + FFT) with ablation study
 - [x] Model comparison (Random Forest vs XGBoost) with proper imbalance handling
 - [x] FastAPI service with input validation
 - [x] Dockerize
-- [ ] Automated tests
-- [ ] Deploy to a live URL (Render/Fly.io)
+- [x] Automated tests
+- [x] Deploy to a live URL (Render)
 - [ ] Logging + basic monitoring
 - [ ] CI/CD (GitHub Actions)

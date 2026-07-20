@@ -13,6 +13,7 @@ exoplanet_venv
 # Data - not committed, see README for how to obtain it
 data/
 *.csv
+instructions.txt
 
 # Trained model - large binary, regenerate via train_model.py
 # (remove this line if you'd rather commit the model for immediate runnability)
