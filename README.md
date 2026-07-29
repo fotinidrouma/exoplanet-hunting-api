@@ -216,5 +216,5 @@ Open [https://exoplanet-hunting-api.onrender.com/docs](https://exoplanet-hunting
 - [x] Dockerize
 - [x] Automated tests
 - [x] Deploy to a live URL (Render)
-- [ ] Logging + basic monitoring
-- [ ] CI/CD (GitHub Actions)
+- [x] Logging + basic monitoring
+- [x] CI/CD (GitHub Actions)
