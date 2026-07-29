@@ -210,7 +210,7 @@ Open [https://exoplanet-hunting-api.onrender.com/docs](https://exoplanet-hunting
 
 ## Roadmap
 - [x] EDA
-- [x] Feature engineering (time-domain + FFT) with ablation study
+- [x] Feature engineering (time-domain + FFT)
 - [x] Model comparison (Random Forest vs XGBoost) with proper imbalance handling
 - [x] FastAPI service with input validation
 - [x] Dockerize
